@@ -202,4 +202,53 @@
                 <h3>Demo Video</h3>
                 <div class="video-wrapper">
                     <video controls preload="metadata" poster="${project.thumbnail || ''}">
-                        <source src="${project.video}" type="video/mp
+                        <source src="${project.video}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        `;
+
+        modalOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        setTimeout(() => modalClose.focus(), 100);
+    }
+
+    // ============================================================
+    // CLOSE MODAL
+    // ============================================================
+    function closeModal() {
+        modalOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+        const videos = modalContent.querySelectorAll('video');
+        videos.forEach(v => v.pause());
+    }
+
+    // ============================================================
+    // EVENT LISTENERS
+    // ============================================================
+    modalClose.addEventListener('click', closeModal);
+    modalOverlay.addEventListener('click', function(e) {
+        if (e.target === modalOverlay) closeModal();
+    });
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modalOverlay.classList.contains('active')) closeModal();
+    });
+
+    navToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('open');
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+
+    // ============================================================
+    // INIT
+    // ============================================================
+    renderTimeline();
+    renderCards();
+
+    console.log(`✅ Roadmap loaded with ${projects.length} projects.`);
+    console.log('📌 To add a project, add to the "projects" array in js/app.js');
+})();
