@@ -1,31 +1,27 @@
 # Digital Transformation Roadmap
 
-A premium, modern, responsive static website showcasing our company's Digital Transformation Roadmap for e-commerce operations (Shopee, Lazada, TikTok Shop).
+A premium, interactive, animated roadmap website showcasing our company's Digital Transformation initiatives.
 
-## Overview
+## ✨ Features
 
-This website presents four strategic automation projects:
-1. **Inventory Counting System** - Warehouse automation with scanning and discrepancy detection
-2. **Factory Quality Issue Evidence Consolidator** - Centralized quality issue management
-3. **Automated Container Management System** - Supply chain visibility
-4. **Order Pending Management System** - Unified order resolution
+- **Animated Roadmap Timeline** - Visual progression with clickable nodes
+- **Interactive Project Cards** - Hover effects and click to explore
+- **Full-Screen Modal/Drawer** - Polished project details
+- **Tabbed Project Details** - Overview / Features / Workflow / Demo
+- **Embedded Video Player** - Play explainer videos directly in the page
+- **Status Indicators** - Visual badges for project progress
+- **Smooth Transitions** - Professional animations between sections
+- **Fully Responsive** - Works on all devices
+- **Accessibility Ready** - Keyboard navigation, ARIA labels, reduced motion support
 
-## Features
+## 🚀 Quick Start
 
-- 🗺️ Visual roadmap with project status
-- 📋 Interactive project cards
-- 🔍 Detailed project views (modal)
-- 🎥 Embedded HTML5 video player for explainer videos
-- 📱 Fully responsive (mobile, tablet, desktop)
-- ♿ Accessibility compliant
-- 🚀 Performance optimized
+### Local Development
+Simply open `index.html` in your browser. No server required.
 
-## Technology Stack
+### GitHub Pages Deployment
+1. Push to GitHub repository
+2. Enable GitHub Pages in Settings
+3. Your site will be live at `https://[username].github.io/project_roadmap`
 
-- HTML5
-- CSS3 (CSS Variables, Flexbox, Grid)
-- Vanilla JavaScript
-- Font Awesome Icons
-- Google Fonts (Inter)
-
-## Folder Structure
+## 📁 Project Structure
